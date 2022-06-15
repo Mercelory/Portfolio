@@ -1,0 +1,286 @@
+    /*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root{
+  --font-weight-normal: 200;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 800;
+
+  --font-size-normal: 2rem;
+
+  --body-font:'Poppins', sans-serif;
+
+  --bg-color: #F0EAD6;
+    --primary-color: #615E56;
+    --secondary-color: #C7C2B1;
+}
+
+.light_theme{
+  --bg-color: #F0EAD6;
+  --primary-color: #615E56;
+  --secondary-color: #C7C2B1;
+}
+
+.dark_theme{
+  --bg-color: #37333A;
+  --primary-color: #DBD4D4;
+  --secondary-color: #3e3946;
+}
+
+.theme{
+  color: var(--primary-color);
+}
+
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.header{
+  top: 0;
+  left: 0;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  flex-direction: row;
+  padding-top: 1rem;
+  width: 100%;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.164);
+  border-radius: 0px 0px 25px 25px;
+
+}
+
+.header_container{
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.header i {
+  font-size: var(--font-size-normal);
+  color: var(--primary-color);
+}
+
+.logo_name{
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+}
+
+
+.container{
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  top: 20rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+
+.main{
+  display: grid;
+  grid-template: 3.5rem 3.5rem / repeat(3,300px);
+  grid-auto-flow: column;
+}
+
+.main h2{
+  font-size: 3.25rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.main p{
+  font-weight: var(--font-weight-normal);
+}
+
+.main svg{
+  width: 100px;
+  margin-left: 5rem;
+}
+
+.section{
+  margin-top: 10rem;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+}
+
+.section h3{
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.about_text{
+  margin-top: .5rem;
+}
+
+.about_text::first-letter{
+  margin-left: 2rem;
+}
+
+
+.resume{
+  display: grid;
+  position: relative;
+  padding: 18px 5px 5px 25px;
+  margin-top: 10rem;
+  background-color: rgba(255, 255, 255, 0.164);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  transition: .5s;
+}
+
+.resume a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.resume:hover{
+  box-shadow: 2px 2px var(--secondary-color), 3px 3px var(--secondary-color), 4px 4px var(--secondary-color);
+  transform: translateX(-3px);
+}
+
+.section_bio_text{
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+}
+
+.section_bio_text h4{
+  font-weight: var(--font-weight-bold);
+  margin-top: 2rem;
+}
+
+.section_bio_text p{
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.hobbies_text{
+  margin-left: 2rem;
+  margin-top: .5rem;
+}
+
+.contacts_text {
+  margin-top: .8rem;
+  margin-bottom: 1.3rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.contacts{
+  padding: 5px 5px 5px 5px;
+  transition: .9s;
+  text-decoration: none;
+  color:var(--primary-color);
+}
+
+.contacts:hover{
+  border-radius: 35px;
+  transition: .9s;
+  background-color: var(--primary-color);
+  backdrop-filter: blur(50rem);
+  color:var(--secondary-color);
+}
+
+.section_contacts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.section_contacts i{
+  margin-right: .5rem;
+  text-decoration: none;
+}
+
+
+.section_skills p{
+  margin-bottom: .3rem;
+  margin-top: .3rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.section_skills h4{
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 414px) {
+  .header_container{
+    max-width: 300px;
+    margin: auto;
+  }
+
+  
+  .container{
+    max-width: 400px;
+  }
+
+  .main{
+    grid-template: 3.5rem 3.5rem / repeat(3,200px);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header_container{
+    max-width: 250px;
+    margin: auto;
+  }
+
+  
+  .container{
+    max-width: 350px;
+  }
+
+  .main{
+    top:200px;
+    left: 30px;
+    grid-template: 3.5rem 3.5rem 3rem / repeat(2,160px);
+  }
+
+
+}
+.logo_ears{
+  transition: .5s;
+  animation-name: ears;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes ears {
+  0%{
+    transform: translateY(0px);
+  }
+  30%{
+    transform: translateY(-10px);
+  }
+  60%{
+    transform: translateY(0px);
+  }
+}
+
+.progressbar { 
+	height: 15px;
+	position: relative;
+	background: rgba(255, 255, 255, 0.164);
+  border-radius: 25px;
+}
+
+
+
+.progressbar span {
+  display: block;
+  height: 100%;
+  background-color: var(--secondary-color);
+    border-radius: 25px;
+  position: relative;
+}

@@ -9,21 +9,21 @@
   <!--Styles-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/null.css">
-  <!--Icons-->
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
   <div class="header">
     <div class="header_container" id = "header_theme">
-      <span class="logo_name">Mercelory</span>
-     <i class="uil uil-moon theme" id = "switch" onclick="changeicon(this)"></i>
+      <span class="logo_name animate__animated wow animate__fadeInDown"data-wow-delay=".2s" >Mercelory</span>
+     <i class="uil uil-moon theme animate__animated wow animate__fadeInDown" data-wow-delay=".4s" id = "switch" style = "cursor:pointer" onclick="changeicon(this)"></i>
     </div>
 </div>
   <div class="main container">
-    <h2>Mercelory</h2>
-    <p>Front-End Developer / Designer</p>
-    <svg viewBox="0 0 256 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <h2 class = "animate__animated wow animate__fadeInDown" data-wow-delay=".6s">Mercelory</h2>
+    <p class = "animate__animated wow animate__fadeInDown" data-wow-delay=".9s">Front-End Developer / Designer</p>
+    <svg viewBox="0 0 256 264" fill="none" xmlns="http://www.w3.org/2000/svg" class = "animate__animated wow animate__fadeInDown "data-wow-delay="1.1s">
       <path d="M247 165.156C247 219.746 193.05 264 126.5 264C59.9497 264 6 219.746 6 165.156C6 110.566 59.9497 28 126.5 28C193.05 28 247 110.566 247 165.156Z" fill="#979797"/>
       <path d="M205.899 184.294C205.899 220.274 170.351 249.442 126.5 249.442C82.649 249.442 47.1008 220.274 47.1008 184.294C47.1008 148.314 82.649 93.8961 126.5 93.8961C170.351 93.8961 205.899 148.314 205.899 184.294Z" fill="#E1DFD9"/>
       <path fill-rule="evenodd" clip-rule="evenodd" class = "logo_ears" d="M31.7737 23.5436C26.5687 22.1489 21.8058 26.9118 23.2005 32.1168L29.2523 54.7027C30.647 59.9077 37.1533 61.6511 40.9636 57.8408L57.4976 41.3067C61.3079 37.4964 59.5646 30.9901 54.3596 29.5955L31.7737 23.5436ZM233.539 38.0016C235.216 32.8806 230.72 27.8645 225.447 28.9725L202.564 33.7806C197.29 34.8886 195.194 41.2898 198.79 45.3028L214.396 62.716C217.992 66.7289 224.584 65.3438 226.261 60.2229L233.539 38.0016Z" fill="#979797"/>
@@ -31,12 +31,13 @@
       
   </div>
   </div>
-  <div class="resume container">
-    <a href="Резюме.pdf">Download CV</a>
+  <div class="resume container animate__animated  animate__fadeInDown animate__delay-1s">
+    <a href="Резюме.pdf "class = "animate__animated  animate__fadeInDown animate__delay-1s" >Download CV</a>
+    <button class = "button_CV" animate__delay-2s></button>
   </div>
   <div class="section container">
-    <h3>About me</h3>
-    <p class="about_text">My name is Dima, I have never participated in large projects, but I have created a lot of web
+    <h3 class = "animate__animated animate__fadeInDown animate__delay-1s">About me</h3>
+    <p class="about_text animate__animated animate__fadeInDown animate__delay-1s">My name is Dima, I have never participated in large projects, but I have created a lot of web
       / design for myself. I have been doing design for about 3 years.
       I started programming at the age of 15, it was in college, and we were learning C ++,
       but later I realized that I like creating websites and developing their design more. I also have a <a
@@ -46,71 +47,75 @@
   </div>
 
   <div class="section container">
-    <h3>Bio</h3>
+    <h3 class = "animate__animated  animate__fadeInDown animate__delay-2s">Bio</h3>
     <div class="section_bio_text">
-      <h4> 2002 </h4>
-      <p>Was Born</p>
-      <h4>2017-2023</h4>
-      <p>Graduated from KKNAU at the faculty of "Computer and Software Engineering"</p>
-      <h4>2021 Feb. - 2021 Jul.</h4>
-      <P>Worked at PrivatBank as incoming line operator</P>
+      <h4 class = "animate__animated  animate__fadeInDown animate__delay-2s"> 2002 </h4>
+      <p class = "animate__animated  animate__fadeInDown animate__delay-2s">Was Born</p>
+      <h4 class = "animate__animated  animate__fadeInDown animate__delay-2s">2017-2023</h4>
+      <p class = "animate__animated  animate__fadeInDown animate__delay-2s">Graduated from KKNAU at the faculty of "Computer and Software Engineering"</p>
+      <h4 class = "animate__animated  animate__fadeInDown animate__delay-2s">2021 Feb. - 2021 Jul.</h4>
+      <P class = "animate__animated  animate__fadeInDown animate__delay-2s">Worked at PrivatBank as incoming line operator</P>
     </div>
   </div>
 
   <div class="section_skills section container">
-    <h3>Skills</h3>
-    <h4>Front-End</h4>
-    <p>HTML</p>
-    <div class="progressbar">
+    <h3 class = "animate__animated wow animate__fadeInDown" >Skills</h3>
+    <h4 class = "animate__animated wow animate__fadeInDown" >Front-End</h4>
+    <p class = "animate__animated wow animate__fadeInDown" >HTML</p>
+    <div class="progressbar animate__animated wow animate__fadeInDown">
       <span style="width: 99%"></span>
     </div> 
-    <p>CSS</p>
-    <div class="progressbar">
+    <p class = "animate__animated wow animate__fadeInDown" >CSS</p>
+    <div class="progressbar animate__animated wow animate__fadeInDown" >
       <span style="width: 80%"></span>
     </div>
-    <p>JS</p>
-    <div class="progressbar">
+    <p class = "animate__animated wow animate__fadeInDown" >JS</p>
+    <div class="progressbar animate__animated wow animate__fadeInDown">
       <span style="width: 5%"></span>
     </div>
-    <h4>Design</h4>
-    <p>Figma</p>
-    <div class="progressbar">
+    <h4 class = "animate__animated wow animate__fadeInDown" >Design</h4>
+    <p class = "animate__animated wow animate__fadeInDown" >Figma</p>
+    <div class="progressbar animate__animated wow animate__fadeInDown" >
       <span style="width: 99%"></span>
     </div> 
-    <p>Illustrator</p>
-    <div class="progressbar">
+    <p class = "animate__animated wow animate__fadeInDown" >Illustrator</p>
+    <div class="progressbar animate__animated wow animate__fadeInDown" >
       <span style="width: 50%"></span>
     </div>
-    <p>Photoshop</p>
-    <div class="progressbar">
+    <p class = "animate__animated wow animate__fadeInDown"  >Photoshop</p>
+    <div class="progressbar animate__animated wow animate__fadeInDown" >
       <span style="width: 50%"></span>
     </div>
   </div>
   <div class="section container">
-    <h3>My hobbies</h3>
-    <p class="hobbies_text">Programming, Design, Drawing, Cooking.</p>
+    <h3 class = "animate__animated wow animate__fadeInDown" >My hobbies</h3>
+    <p class="hobbies_text animate__animated wow animate__fadeInDown" >Programming, Design, Drawing, Cooking.</p>
   </div>
 
 
   <div class="section container">
-    <h3>My contacts</h3>
+    <h3 class = "animate__animated wow animate__fadeInDown">My contacts</h3>
     <div class="section_contacts">
-      <p class="contacts_text"><a href="https://www.youtube.com/channel/UCP8uyQprlpg7mEMzULYHAbQ" class="contacts"><i
-        class="uil uil-youtube"></i>Youtube</a></p>
-      <p class="contacts_text"><a href="mailto:mercelory@gmail.com" class="contacts"><i class="uil uil-at conacts_button"></i>Gmail</a>
+      <p class="contacts_text animate__animated wow animate__fadeInDown" ><a href="https://www.youtube.com/channel/UCP8uyQprlpg7mEMzULYHAbQ" class="contacts " ><i
+        class="uil uil-youtube "></i>Youtube</a></p>
+      <p class="contacts_text animate__animated wow animate__fadeInDown" ><a href="mailto:mercelory@gmail.com" class="contacts "><i class="uil uil-at conacts_button"></i>Gmail</a>
       </p>
-      <p class="contacts_text"><a href="https://maps.app.goo.gl/8Xt5ztm8ESKhbjG96" class="contacts"> <i
+      <p class="contacts_text animate__animated wow animate__fadeInDown"><a href="https://maps.app.goo.gl/8Xt5ztm8ESKhbjG96" class="contacts "> <i
             class="uil uil-location-pin-alt"></i>Kriviy Rih, 50000</a></p>
-      <p class="contacts_text"><a href="https://instagram.com/molchimoichii?igshid=YmMyMTA2M2Y=" class="contacts"> <i
+      <p class="contacts_text animate__animated wow animate__fadeInDown" ><a href="https://instagram.com/molchimoichii?igshid=YmMyMTA2M2Y=" class="contacts "> <i
             class="uil uil-instagram"></i>Instagram</a></p>
-      <p class="contacts_text"><a href="https://t.me/Mercelory" class="contacts"> <i
+      <p class="contacts_text animate__animated wow animate__fadeInDown" ><a href="https://t.me/Mercelory" class="contacts "> <i
             class="uil uil-telegram-alt"></i>Telegram</a></p>
-      <p class="contacts_text"><a href="https://github.com/Mercelory" class="contacts"> <i
-            class="uil uil-github-alt"></i>GitHub</a></p>
+      <p class="contacts_text animate__animated wow animate__fadeInDown" ><a href="https://github.com/Mercelory" class="contacts "> <i
+            class="uil uil-github-alt "></i>GitHub</a></p>
     </div>
   </div>
   <!--JS-->
   <script src="js/js.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>
 </body>
 
 </html>
