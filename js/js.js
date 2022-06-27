@@ -1,4 +1,6 @@
+import 'animate.css';
 
+new WOW().init();
 
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
