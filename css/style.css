@@ -213,7 +213,7 @@ body {
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 582px) {
   .header_container{
     max-width: 300px;
     margin: auto;
