@@ -33,6 +33,7 @@
   </div>
   <div class="resume container animate__animated  animate__fadeInDown animate__delay-1s">
     <a href="Резюме.pdf "class = "animate__animated  animate__fadeInDown animate__delay-1s" >Download CV</a>
+
   </div>
   <div class="section container">
     <h3 class = "animate__animated animate__fadeInDown animate__delay-1s">About me</h3>
@@ -118,6 +119,29 @@
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
+    function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+(function () {
+    if (localStorage.getItem('theme') === 'dark_theme') {
+        setTheme('dark_theme');
+    } else {
+        setTheme('light_theme');
+    }
+ })();
+
+let changeicon = function(icon) {
+     icon.classList.toggle("uil-sun")
+        if (localStorage.getItem('theme') === 'dark_theme'){
+            setTheme('light_theme');
+        } else {
+            setTheme('dark_theme');
+        }
+     }
+
+
     </script>
 </body>
 
